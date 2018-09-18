@@ -15,7 +15,7 @@ class JobsController extends BaseController{
                       ->key('description', v::stringType()->notEmpty());
       
       try {
-        //Obtener la dada del request
+        //Obtener la data del request
         $postData = $request->getParsedBody();
 
         //Validar los datos
@@ -36,7 +36,7 @@ class JobsController extends BaseController{
         $job->description = $postData['description'];
         $job->save();
 
-        $responseMessage = 'Saved';
+        $responseMessage = 'Job Saved';
       }
       catch(\Exception $e) {
         $responseMessage = $e->getMessage();

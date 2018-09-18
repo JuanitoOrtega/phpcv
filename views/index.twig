@@ -1,18 +1,18 @@
-{% extends "layout.twig" %}
+{% extends "layouts/admin.twig" %}
 
 {% block content %}
 <div id="resume-header" class="row">
   <div class="col-3">
-    <img id="profile-picture" src="https://ui-avatars.com/api/?name=John+Doe&size=255" alt="">
+    <img id="profile-picture" src="/me.png" alt="">
   </div>
   <div class="col">
     <h1>{{ name }}</h1>
     <h2>Full Stack Developer</h2>
     <ul>
-      <li>Mail: hector@mail.com</li>
+      <li>Mail: <a href="mailto:admin@example.com">admin@example.com</a></li>
       <li>Phone: 1234567890</li>
-      <li>LinkedIn: https://linkedin.com</li>
-      <li>Twitter: @hectorbenitez</li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/mineitoshio" target="_blank">/in/mineitoshio</a></li>
+      <li>Twitter: <a href="https://twitter.com/MineiToshio" target="_blank">@mineitoshio</a></li>
     </ul>
   </div>
 </div>
@@ -20,8 +20,7 @@
   <div class="col">
     <h2 class="border-bottom-gray" >Carrer Summary</h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      A focused Marketing graduate with a 2:1 degree, specialising in Digital Marketing. Possesses relevant professional experience gained during two internships with multinational businesses, acquiring valuable insight into developing and implementing digital marketing campaigns. Able to balance multiple competing priorities, having worked part-time for three years whilst still achieving strict deadlines for submission of assignments. Aiming to secure a place on a graduate scheme, which will provide commercial exposure and opportunities for progression.
     </p>
   </div>
 </div>
@@ -34,12 +33,11 @@
           <li class="work-position">
             <h5>{{ job.title }}</h5>
             <p>{{ job.description }}</p>
-            {# <p>{{ job. }}getDurationAsString()</p> #}
             <strong>Achievements:</strong>
             <ul>
-              <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
-              <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
-              <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
+              <li>Raised the sales in 20%.</li>
+              <li>Reduced costs in 10%.</li>
+              <li>Employee of the month.</li>
             </ul>
           </li>
         {% endfor %}

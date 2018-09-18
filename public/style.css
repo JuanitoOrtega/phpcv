@@ -73,3 +73,6 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+.admin.container {
+  padding: 60px 15px 0;
+}

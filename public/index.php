@@ -115,9 +115,8 @@ if (!$route) {
 
   $sessionUserId = $_SESSION['userId'] ?? null;
   if($needsAuth && !$sessionUserId) {
-    echo 'Protected route';
+    echo 'Forbidden. You have to <a href="/login">log in</a> to access this page';
     die;
-    //return new RedirectResponse('/login');
   }
 
   $controller = new $controllerName;
